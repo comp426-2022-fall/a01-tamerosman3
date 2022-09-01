@@ -1,0 +1,19 @@
+{
+  "name": "a01-tamerosman3",
+  "version": "1.0.0",
+  "description": "comp 426",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a01-tamerosman3.git"
+  },
+  "author": "tamerosman3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a01-tamerosman3/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a01-tamerosman3#readme"
+}
