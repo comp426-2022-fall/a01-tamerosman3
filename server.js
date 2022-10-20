@@ -10,11 +10,13 @@ const port = args.port || 3000;
 // Make this const default to port 3000 if there is no argument given for `--port`.
 
 // Use the fs module to create an arrow function using `fs.readFile`.
-const file = fs.readFile('./public/index.html', 'utf8', (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
+fs.readFile('./public/index.html', 'Utf8', (err, data) => {
+	  if (err) {
+		      console.error(err);
+		      return;
+		    }
+	 text = data;
+});
 // Use the documentation for the Node.js `fs` module. 
 // The function must read a file located at `./public/index.html` and do some stuff with it.
 // The stuff that should be inside this function is all below.
@@ -36,7 +38,7 @@ const file = fs.readFile('./public/index.html', 'utf8', (err, data) => {
 const server = http.createServer((req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Content-Type', 'text/html');
-	res.end(file);
+	res.end(text);
 });
 
 
